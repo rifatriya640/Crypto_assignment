@@ -1,0 +1,15 @@
+Testing the program in kali requires these steps :
+1. The encryption program is in a file named 'otp_enc.c' and the decryption program is in a file named 'otp_dec.c'. 
+2.  Saved these files in the same directory on kali machine
+3. Compiled the first program with command - gcc -o otp_enc otp_enc.c
+4. Compiled the second program with command - gcc -o otp_dec otp_dec.c
+5. Generated a key file by command - ./key_generation_program
+6. Created a plaintext file containing exact message to encrypt, and save it in the same directory.
+7. Encrypted the plaintext file by command - ./otp_enc plaintext_file ciphertext_file key_file
+8. Decrypted the ciphertext file by command - ./otp_dec ciphertext_file decrypted_file key_file
+
+N.B: Need to provide the correct filenames for the plaintext, ciphertext, and key files. Also, have to be sure that those located in the same directory as the programs.
+
+
+
+
